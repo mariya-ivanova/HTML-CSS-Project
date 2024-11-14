@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Grid and Flexbox</title>
+	<link href="style.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />	
+</head>
+
+<body>
+	<div id="wrapper">
+		<header class="margin-both flex">
+			<h1 class="logo">
+				Example Logo
+			</h1>
+
+            <nav class="social">	
+                <a href="#"><i class="fab fa-facebook"></i></a>                
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>    
+                <a href="#"><i class="fas fa-search"></i></a>                
+			</nav>			
+		</header>
+
+		<div id="navbar" class="margin-both flex">
+			<ul class="main-menu">
+				<li>			
+				 <a href="#">Submenu</a>
+				 	<div class="content">
+	                    <!-- <h3>Submenu</h3> -->
+	                    <ul>
+	                        <li>
+	                            <a href="#">Submenu item 1</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">Submenu item 2</a>
+	                        </li>
+	                        <li>
+	                            <a href="#">Submenu item 3</a>
+	                        </li>
+	                    </ul>
+                	</div>
+                </li>				
+				<li><a href="#section1">Section 1</a>
+                </li>
+				 <li><a href="#section2">Section 2</a>
+				 </li>
+				 <li><a href="#section3">Section 3</a>
+				 </li>
+				 <li><a href="#section4">Section 4</a></li>
+				 <li><a href="#">News</a></li>				 							
+                </ul>				 
+			
+			<div>
+				<i class="fas fa-cloud icon-color"></i>
+				<span>32 &deg; Sofia</span>				
+			</div>
+			
+		</div>		
+
+		<section id="section1" class="grid col2-newslist margin-both section-border-bottom">
+			<div>
+				<img title="World Freedom Alliance" alt="World Freedom Alliance" src="images/real-estate-9053405_1280.jpg" />
+				<h3>Example link</h3>
+				<p>Tempore sed necessitatibus quae fugit consequatur qui laboriosam est eum. Tempore sed necessitatibus quae fugit consequatur qui laboriosam est eum.</p>
+				<br/>
+				<a title="Example link" target="_blank" href="#" class="btn">Read more</a>
+			</div>	
+
+			<div>
+				<h2>News</h2>
+				<ul>
+					<li><a target="_blank" title="Adebayo Folorunsho-Francis" href="#">Tempore sed necessitatibus quae fugit consequatur qui laboriosam est eum.</a>
+						<br/>
+						<span class="author-date">Adebayo Folorunsho-Francis - 
+						<time pubdate datetime="2020-12-03" title="May 7, 2021"> May 7, 2021</time></span>								
+					</li>
+					<li><a title="Who are we" href="#">Who are we?</a>
+						<br/>
+						<span class="author-date">Our team - 
+						<time pubdate datetime="2020-12-03" title="May 7, 2021"> May 7, 2021</time></span>									
+					</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						<br/>
+						<span class="author-date">Adebayo Folorunsho-Francis - 
+						<time pubdate datetime="2020-12-03" title="December 3th, 2020"> Dec 7, 2020</time></span>									
+					</li>
+					<li>Tempore sed necessitatibus quae fugit consequatur qui laboriosam est eum.
+						<br/>
+						<span class="author-date">Adebayo Folorunsho-Francis - 
+						<time pubdate datetime="2020-12-03" title="December 3th, 2020"> Dec 7, 2020</time></span>						
+					</li>
+					<li>Quaerat maxime placeat laboriosam odit ut animi aut laudantium.
+						<br/>
+						<span class="author-date">Adebayo Folorunsho-Francis - 
+						<time pubdate datetime="2020-12-03" title="May 7, 2021"> May 7, 2021</time></span>									
+				</ul>	
+				<div class="more"><a href="#">See all news <i class="fas fa-arrow-right"></i></a></div>
+			</div>			
+		</section>
+		
+		<section id="section2" class="margin-both section-border-bottom">
+			<h2>Section 2</h2>
+			<div class="grid col3-span-end-row2">
+			<div>
+				<img src="images/real-estate-9053405_1280.jpg" />
+				<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</h3>				
+				<time pubdate datetime="2020-12-03" title="May 7, 2021">May 7, 2021</time>
+			</div>
+			<div>
+				<img src="images/dog-8593014_1280.jpg" />
+				<h3>Non ut ut nobis.</h3>				
+				<time pubdate datetime="2020-12-03" title="December 3th, 2020">Dec 3, 2020</time>				
+			</div>	
+			<div class="box3">
+				<img src="images/winter-8578334_1280.jpg" />
+				<h3>At doloremque id voluptatum dignissimos unde est voluptatem.</h3>
+				<span class="author-date">John Doe - 
+					<time pubdate datetime="2020-12-03" title="May 7, 2021">May 7, 2021</time>
+				</span>
+				<p>Sit voluptatum suscipit sunt sed ut ratione alias. Dolorem culpa alias quos. Aliquid iusto laboriosam alias. Optio ullam molestiae et non repellendus sit iste.</p>
+
+				<div class="more-left"><a href="#">Read more <i class="fas fa-arrow-right"></i></a></div>
+
+			</div>								
+			<div>
+				<img src="images/forest-7179046_1280.jpg" />
+				<h3>Asperiores sapiente alias voluptas quasi ratione quae dolorem.</h3>
+				<time pubdate datetime="2020-12-03" title="May 7, 2021">May 7, 2021</time>
+			</div>
+
+			<div class="bgcolor">
+				<div>
+					<a title="Example link" target="_blank" href="#">
+				<h3>Sit voluptatum suscipit sunt sed ut ratione alias. Dolorem culpa alias quos. Aliquid iusto laboriosam alias. Optio ullam molestiae et non repellendus sit iste.</h3>
+					</a>
+					<span class="author-date">John Doe - 
+					<time pubdate datetime="2020-12-03" title="December 3th, 2020">Dec 3, 2020</time></span>					
+				</div>		
+			</div>
+
+			</div>	
+		</section>
+
+		<section id="section3" class="margin-both">
+			<h2>Section 3</h2>
+
+			<div class="grid col3-span-start-row2">
+				<div class="box1">
+					<img src="images/forest-7179046_1280.jpg" />
+					<h3>Atque necessitatibus ipsa molestiae aspernatur et recusandae.</h3>
+
+					<span class="author-date">John Doe - 
+						<time pubdate datetime="2020-12-03" title="May 7, 2021">May 7, 2021</time>
+					</span>
+					<p>Sit voluptatum suscipit sunt sed ut ratione alias. Dolorem culpa alias quos. Aliquid iusto laboriosam alias. Optio ullam molestiae et non repellendus sit iste.</p>	
+
+					<div class="more-left"><a href="#">Read more <i class="fas fa-arrow-right"></i></a></div>							
+				</div>
+
+				<div>
+					<img src="images/winter-8578334_1280.jpg" />
+					<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>				 
+					<time pubdate datetime="2020-12-03" title="December 3th, 2020">Dec 3, 2020</time>						
+				</div>
+				<div>
+					<img src="images/forest-7179046_1280.jpg" />
+					<h3>Et ipsam deleniti mollitia iure et incidunt assumenda expedita.</h3>				 
+					<time pubdate datetime="2020-12-03" title="May 7, 2021">May 7, 2021</time>		
+				</div>						
+				<div>
+					<img src="images/dog-8593014_1280.jpg" />
+					<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>				 
+					<time pubdate datetime="2020-12-03" title="December 3th, 2020">Dec 3, 2020</time>
+				</div>
+				<div>
+					<img src="images/real-estate-9053405_1280.jpg" />
+					<h3>Et ipsam deleniti mollitia iure et incidunt assumenda expedita.</h3>				 
+					<time pubdate datetime="2020-12-03" title="May 7, 2021">May 7, 2021</time>
+				</div>	
+			</div>					
+		</section>
+
+		<section id="section4" class="margin-both bggray">
+			<h2>Section 4</h2>			
+			<div class="grid column4">
+				<div>
+					<img src="images/dog-8593014_1280.jpg" />
+					<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>				 
+					<time pubdate datetime="2020-12-03" title="May 7, 2021">May 7, 2021</time>
+				</div>
+				<div>
+					<img src="images/forest-7179046_1280.jpg" />
+					<h3>Et ipsam deleniti mollitia iure et incidunt assumenda expedita.</h3>				 
+					<time pubdate datetime="2020-12-03" title="December 3th, 2020">Dec 3, 2020</time>
+				</div>
+				<div>
+					<img src="images/real-estate-9053405_1280.jpg" />
+					<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>				 
+					<time pubdate datetime="2020-12-03" title="May 7, 2021">May 7, 2021</time>
+				</div>
+				<div>
+					<img src="images/winter-8578334_1280.jpg" />
+					<h3>Et ipsam deleniti mollitia iure et incidunt assumenda expedita.</h3>				 
+					<time pubdate datetime="2020-12-03" title="December 3th, 2020">Dec 3, 2020</time>
+				</div>
+			</div>											
+		</section>
+
+		<footer>
+			<div id="footer-up">
+				<h2>Footer</h2>				
+				<div class="flex">	
+					<div>
+						<img src="images/winter-8578334_1280.jpg" />
+						<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>				 
+						<time pubdate datetime="2020-12-03" title="May 7, 2021">May 7, 2021</time>
+					</div>
+					<div>
+						<img src="images/forest-7179046_1280.jpg" />
+						<h3>Et ipsam deleniti mollitia iure et incidunt assumenda expedita.</h3>				 
+						<time pubdate datetime="2020-12-03" title="May 7, 2021">May 7, 2021</time>
+
+					</div>			
+					<div>
+						<img src="images/real-estate-9053405_1280.jpg" />
+						<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>				 
+						<time pubdate datetime="2020-12-03" title="December 3th, 2020">Dec 3, 2020</time>
+					</div>	
+				</div>				
+			</div>
+
+			<div id="footer-down">
+				<div class="flex">
+					<nav class="main-menu flex">	
+						<a href="#">News</a>				 
+						<a href="#">Section 1</a>
+						<a href="#">Section 2</a>
+						<a href="#">Section 3</a>
+						<a href="#">Section 4</a>
+					</nav>
+
+					<div id="citation">Mariya Ivanova's Project @ 2024</div>
+			        <nav class="social">
+			            <a href="#"><i class="fab fa-facebook"></i></a>                
+			            <a href="#"><i class="fab fa-twitter"></i></a>
+			            <a href="#"><i class="fab fa-instagram"></i></a>
+			        </nav>
+				</div>
+			</div>
+
+		</footer>		
+	</div>
+
+</body>
+</html>
+
+
