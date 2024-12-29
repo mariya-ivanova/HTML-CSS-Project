@@ -11,6 +11,9 @@ $author-date-color: #2F2F2F;
 $header-icons-background: #EBEBEB;
 $footer-icons-color: #000000;
 $btncolor: #25004e;
+$banner-firsttext-color: #a0a0a0;
+$banner-secondtext-color: #ffa00c;
+$btnup-color: #ffa00c;
 
 * {
   box-sizing: border-box;
@@ -80,7 +83,7 @@ header {
 
 	h1 {
 	
-		font-size: 32px;
+		font-size: 36px;
 		font-weight: 500;   
 	}
 
@@ -88,12 +91,17 @@ header {
 		background: $header-icons-background;
 		padding: 5px;
 		font-size:16px;
-	} 
+	}
+
+	.flex {
+		justify-content: space-between; 
+		align-items: center;
+		height: 100%;
+	}  	
 }
 
 
-#navbar.flex,
-header.flex {
+#navbar.flex {
 		justify-content: space-between; 
 		align-items: center;
 		height: 100%;
@@ -174,6 +182,66 @@ time,
 .section-border-bottom {
 	border-bottom: 2px solid $bgcolor;   
 }
+
+/* --------------------- animated banner --------------------- */
+.text1 {
+    max-width: 100%;
+    line-height: 0.8;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+
+    span {
+	    display: inline-block;
+	    max-width: 100%;
+	    font-size: 32px;
+	    opacity: 0;
+	    transform: scale(2.5);
+	}
+
+	span:nth-child(odd) {
+	    color: $banner-firsttext-color;    
+	}
+
+	span:nth-child(even) {
+	   color: $banner-secondtext-color;
+	}
+
+	p {
+	    color: $banner-firsttext-color;
+	    font-size: 32px;
+	    opacity: 0;
+	    text-align: left;
+	}
+}
+
+
+.text2 {
+    line-height: 0.8;
+
+	span {
+	    font-size: 32px;
+	    opacity: 0;
+	    text-transform: uppercase;
+	}
+
+	span:nth-child(1) {
+	    color: $banner-firsttext-color;
+	}
+
+	span:nth-child(2) {
+	    color: $banner-secondtext-color;
+	}
+
+	p {
+	    color: $banner-secondtext-color;
+	    font-size: 42px;
+	    opacity: 0;
+	    text-transform: uppercase;
+	    text-align: center;
+	}
+}
+
 
 /*--------------------------------- main menu ----------------------------------- */
 .main-menu {
@@ -266,7 +334,6 @@ time,
 }
 
 /* -------------------------- section 2 ------------------------------- */
-
 .col3-span-end-row2 {
 	grid-template-columns: 1fr 1fr 2fr; 
 	grid-gap: 1em;
@@ -416,9 +483,16 @@ footer {
 	background-color: #eaeaea;
 }
 
+.up {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: $btnup-color;
+}
 
 @media screen and (max-width: 900px) {
-
 	.grid,
 	.col2-newslist,  
 	.col3-span-start-row2,
@@ -438,6 +512,12 @@ footer {
 		flex-wrap: wrap;
 	}
 
+.text1 p, .text2 {text-align: center;}
+
+.text1 span {
+    transform: scale(0.5);
+    margin-bottom: 10px;
+}
 
 	.main-menu {
 		width: 100%;
